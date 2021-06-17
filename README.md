@@ -1,3 +1,5 @@
+# Project creation:
+
 Create app directory:
 
 `npx create-react-app <appname>`
@@ -24,9 +26,13 @@ Add the following to package.json:
 
 Push changes to github repository.
 
-Deploy the code:
+### Deploy the code:
 
 `npm run deploy`
+
+### Alternate deployment method
+
+Build the production code using: `npm run build`
 
 Move contents from the 'build' folder to the 'docs' folder and push the changes to the repository.
 
