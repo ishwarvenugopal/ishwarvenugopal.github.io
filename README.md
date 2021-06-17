@@ -28,4 +28,6 @@ Deploy the code:
 
 `npm run deploy`
 
-Change the Github page source to the gh-pages branch from the repository settings
+Move contents from the 'build' folder to the 'docs' folder and push the changes to the repository.
+
+Change the Github page source to the /docs folder in the main branch, from the repository settings
