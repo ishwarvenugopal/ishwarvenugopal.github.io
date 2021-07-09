@@ -25,7 +25,7 @@ const sections = [
 ];
 
 const mainFeaturedPost = {
-  title: 'Hi, welcome to my webpage!',
+  title: "Hi, I'm Ishwar. Welcome to my webpage!",
   description:
     "This page features the major projects that I have undertaken. Connect with me on professional and social media platforms from the links given above.",
   image: 'https://source.unsplash.com/random',
@@ -40,7 +40,7 @@ export default function Blog() {
     <React.Fragment>
       <CssBaseline />
       <Container maxWidth="lg">
-        <Header title="ISHWAR VENUGOPAL" sections={sections} />
+        <Header title="Personal Blog" sections={sections} />
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
           <Grid container spacing={4}>
