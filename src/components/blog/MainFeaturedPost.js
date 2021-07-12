@@ -45,13 +45,17 @@ export default function MainFeaturedPost(props) {
       {<img style={{ display: 'none' }} src={post.image} alt={post.imageText} />}
       <div className={classes.overlay} />
       <Grid container>
-        <Grid item md={6}>
+        <Grid item md={7}>
           <div className={classes.mainFeaturedPostContent}>
             <Typography component="h1" variant="h3" color="inherit" gutterBottom>
               {post.title}
             </Typography>
             <Typography variant="h5" color="inherit" paragraph>
-              {post.description}
+              {post.descriptionline1}
+            </Typography>
+            <Typography />
+            <Typography variant="h8" color="inherit" paragraph>
+              {post.descriptionline2}<Link href='https://github.com/ishwarvenugopal/ishwarvenugopal.github.io'>Click here</Link>{post.descriptionline3}
             </Typography>
             <Link variant="subtitle1" href="#">
               {post.linkText}

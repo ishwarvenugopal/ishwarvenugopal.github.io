@@ -3,9 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
-// import GitHubIcon from '@material-ui/icons/GitHub';
-// import FacebookIcon from '@material-ui/icons/Facebook';
-// import TwitterIcon from '@material-ui/icons/Twitter';
 import Header from './Header';
 import MainFeaturedPost from './MainFeaturedPost';
 import FeaturedPost from './FeaturedPost';
@@ -20,14 +17,18 @@ const useStyles = makeStyles((theme) => ({
 
 const sections = [
   { title: 'PROJECTS', url: '#' },
-  { title: 'PROFESSIONAL NETWORKING', url: '#' },
-  { title: 'SOCIAL MEDIA', url: '#' },
+  { title: 'PROFESSIONAL NETWORKING', url: 'professional' },
+  { title: 'SOCIAL MEDIA', url: 'social' },
 ];
 
 const mainFeaturedPost = {
   title: "Hi, I'm Ishwar. Welcome to my webpage!",
-  description:
-    "This page features the major projects that I have undertaken. Connect with me on professional and social media platforms from the links given above.",
+  descriptionline1:
+    "This page features the major projects that I have undertaken.",
+  descriptionline2:
+    "This webpage has been created using ReactJS. ",
+  descriptionline3:
+    " to view the source code.",
   image: 'https://source.unsplash.com/random',
   // imgText: 'main image description',
   // linkText: 'Continue reading…',
@@ -50,7 +51,7 @@ export default function Blog() {
           </Grid>
         </main>
       </Container>
-      {/* <Footer title="Footer" description="Something here to give the footer a purpose!" /> */}
+      <Footer title="Connect with me here:" description="Something here to give the footer a purpose!" />
     </React.Fragment>
   );
 }
