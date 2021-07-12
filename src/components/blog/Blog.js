@@ -7,7 +7,8 @@ import Header from './Header';
 import MainFeaturedPost from './MainFeaturedPost';
 import FeaturedPost from './FeaturedPost';
 import Footer from './Footer';
-import * as posts from './all_posts'
+import * as posts from './all_posts';
+import bgimage from '../../images/background.jpg';
 
 const useStyles = makeStyles((theme) => ({
   mainGrid: {
@@ -29,7 +30,8 @@ const mainFeaturedPost = {
     "This webpage has been created using ReactJS. ",
   descriptionline3:
     " to view the source code.",
-  image: 'https://source.unsplash.com/random',
+  // image: 'https://source.unsplash.com/random',
+  image: bgimage ,
   // imgText: 'main image description',
   // linkText: 'Continue reading…',
 };
